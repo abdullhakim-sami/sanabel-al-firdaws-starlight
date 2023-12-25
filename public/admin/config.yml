@@ -5,7 +5,7 @@ backend:
   base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev
   branch: main
 
-  repo: abdullhakim-sami/sanabel-al-firdaws-starlight
+  repo: abdullhakim-sami/abdullhakim-sami.github.io
 collections:
   - create: true
     fields:
