@@ -5,6 +5,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	site: 'https://abdullhakim-sami.github.io',
 	// base: '/sanabel-al-firdaws-starlight',
+	output: "server",
 	integrations: [
 		starlight({
 			title: 'My Docs',
