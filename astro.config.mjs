@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://abdullhakim-sami.github.io',
-	base: '/sanabel-al-firdaws',
+	base: '/sanabel-al-firdaws-starlight',
 	integrations: [
 		starlight({
 			title: 'My Docs',
