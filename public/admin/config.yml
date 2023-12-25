@@ -40,7 +40,7 @@ collections:
         required: false
         widget: list
     folder: src/content/docs/test
-    label:منهاج المسلم
+    label: منهاج المسلم
     name: docs
     nested:
       depth: 100
