@@ -1,0 +1,58 @@
+---
+backend:
+  # name: git-gateway
+  name: github
+  base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev
+  branch: main
+
+  repo: abdullhakim-sami/sanabel-al-firdaws-starlight
+collections:
+  - create: true
+    fields:
+      - label: محتوى المقال
+        name: body
+        widget: markdown
+      - label: عنوان المقال
+        name: title
+        widget: string
+      - label: رابط المقال
+        name: slug
+        widget: string
+      - label: المؤلفون
+        name: contributors
+        widget: list
+      - label: مسودة
+        name: draft
+        widget: boolean
+        default: true
+      - label: العلامات
+        name: tags
+        required: false
+        widget: list
+      - label: تاريخ كتابة المقال
+        name: date
+        widget: datetime
+      - label: اخر تحديث
+        name: lastmod
+        widget: datetime
+      - label: التصنيفات
+        name: categories
+        required: false
+        widget: list
+    folder: src/content/docs/test
+    label:منهاج المسلم
+    name: docs
+    nested:
+      depth: 100
+local_backend: false
+media_folder:
+  public/img
+  # - label: "منهاج المسلم"
+  #   name: "docs"
+  #   folder: "content/docs"
+  #   create: true
+  #   fields:
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - { label: "Publish Date", name: "date", widget: "datetime" }
+  #     # - { label: "Featured Image", name: "thumbnail", widget: "image" }
+  #     - { label: "Body", name: "body", widget: "markdown" }# backend:
